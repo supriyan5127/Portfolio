@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
   <!-- Google Font & Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -46,12 +48,12 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: 
+      background-image:
         radial-gradient(circle at 10% 20%, rgba(57, 255, 158, 0.08) 0%, transparent 30%),
         radial-gradient(circle at 90% 70%, rgba(126, 255, 178, 0.08) 0%, transparent 35%),
         repeating-linear-gradient(45deg, rgba(57, 255, 158, 0.02) 0px, rgba(57, 255, 158, 0.02) 2px, transparent 2px, transparent 12px),
-        repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 30px),
-        repeating-linear-gradient(90deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 30px);
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0px, rgba(255, 255, 255, 0.01) 1px, transparent 1px, transparent 30px),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.01) 0px, rgba(255, 255, 255, 0.01) 1px, transparent 1px, transparent 30px);
       pointer-events: none;
       z-index: 0;
     }
@@ -64,12 +66,14 @@
       width: 100%;
       height: 100%;
       background: radial-gradient(circle at 20% 40%, rgba(57, 255, 158, 0.05) 0%, transparent 40%),
-                  radial-gradient(circle at 80% 60%, rgba(126, 255, 178, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 80% 60%, rgba(126, 255, 178, 0.05) 0%, transparent 40%);
       pointer-events: none;
       z-index: 0;
     }
 
-    header, main, footer {
+    header,
+    main,
+    footer {
       position: relative;
       z-index: 2;
     }
@@ -249,6 +253,7 @@
       justify-content: center;
       align-items: center;
     }
+
     .profile-avatar {
       width: 330px;
       height: 330px;
@@ -259,12 +264,14 @@
       transition: all 0.3s ease;
       background: var(--surface-dark);
     }
+
     .profile-avatar img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
+
     .profile-avatar:hover {
       border-radius: 58% 42% 62% 38% / 52% 48% 52% 48%;
       border-color: var(--primary-green);
@@ -280,6 +287,7 @@
       max-width: 1000px;
       margin: 2.5rem auto 0;
     }
+
     .skill-badge {
       background: rgba(20, 24, 36, 0.7);
       backdrop-filter: blur(5px);
@@ -291,6 +299,7 @@
       color: var(--text-light);
       font-size: 1rem;
     }
+
     .skill-badge:hover {
       background: var(--primary-green);
       color: #0b0c14;
@@ -304,6 +313,7 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+
     .exp-card {
       background: rgba(20, 24, 36, 0.6);
       backdrop-filter: blur(8px);
@@ -312,10 +322,12 @@
       border: 1px solid rgba(57, 255, 158, 0.2);
       transition: transform 0.2s, border-color 0.2s;
     }
+
     .exp-card:hover {
       transform: translateY(-5px);
       border-color: var(--primary-green);
     }
+
     .exp-card h3 {
       font-size: 1.8rem;
       font-weight: 600;
@@ -324,6 +336,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .exp-meta {
       font-weight: 500;
       color: var(--primary-green);
@@ -333,18 +346,21 @@
       align-items: center;
       gap: 0.5rem;
     }
+
     .exp-desc {
       color: var(--text-dim);
       margin-top: 1rem;
       padding-left: 1rem;
       border-left: 3px solid var(--secondary-green);
     }
+
     .exp-desc li {
       list-style: none;
       margin-bottom: 0.6rem;
       display: flex;
       gap: 0.8rem;
     }
+
     .exp-desc i {
       color: var(--secondary-green);
     }
@@ -357,6 +373,7 @@
       justify-content: center;
       margin-top: 2rem;
     }
+
     .edu-item {
       background: rgba(20, 24, 36, 0.8);
       backdrop-filter: blur(8px);
@@ -366,10 +383,12 @@
       flex: 1 1 280px;
       transition: transform 0.2s, border-color 0.2s;
     }
+
     .edu-item:hover {
       transform: translateY(-4px);
       border-color: var(--primary-green);
     }
+
     .edu-item h4 {
       font-size: 1.8rem;
       font-weight: 600;
@@ -378,12 +397,14 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 0.8rem;
     }
+
     .edu-item .institute {
       color: var(--text-light);
       font-weight: 500;
       margin: 0.6rem 0;
       font-size: 1.1rem;
     }
+
     .edu-item p {
       color: var(--text-dim);
       display: flex;
@@ -391,6 +412,7 @@
       gap: 0.5rem;
       margin: 0.8rem 0;
     }
+
     .edu-item i {
       color: var(--secondary-green);
     }
@@ -406,9 +428,11 @@
       padding: 3rem;
       border: 1px solid rgba(57, 255, 158, 0.2);
     }
+
     .contact-info {
       flex: 1 1 280px;
     }
+
     .contact-info h3 {
       font-size: 2.4rem;
       font-weight: 600;
@@ -417,12 +441,14 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     .contact-detail {
       display: flex;
       align-items: center;
       gap: 1.2rem;
       margin: 1.8rem 0;
     }
+
     .contact-detail i {
       width: 52px;
       height: 52px;
@@ -434,13 +460,15 @@
       color: #0b0c14;
       font-size: 1.5rem;
     }
+
     .social-links {
       display: flex;
       gap: 1.4rem;
       margin-top: 2.5rem;
     }
+
     .social-links a {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       width: 55px;
       height: 55px;
       border-radius: 50%;
@@ -452,10 +480,12 @@
       border: 1px solid rgba(57, 255, 158, 0.3);
       transition: background 0.2s, color 0.2s;
     }
+
     .social-links a:hover {
       background: var(--primary-green);
       color: #0b0c14;
     }
+
     .download-resume-btn {
       margin-top: 2rem;
     }
@@ -464,7 +494,9 @@
     .input-group {
       margin-bottom: 1.4rem;
     }
-    .input-group input, .input-group textarea {
+
+    .input-group input,
+    .input-group textarea {
       width: 100%;
       padding: 1.1rem 1.8rem;
       border: 1px solid rgba(57, 255, 158, 0.3);
@@ -474,7 +506,9 @@
       background: rgba(10, 12, 22, 0.7);
       color: var(--text-light);
     }
-    .input-group input:focus, .input-group textarea:focus {
+
+    .input-group input:focus,
+    .input-group textarea:focus {
       border-color: var(--primary-green);
     }
 
@@ -498,13 +532,16 @@
         grid-template-columns: 1fr;
         text-align: center;
       }
+
       .hero-desc {
         margin-left: auto;
         margin-right: auto;
       }
+
       .btn-group {
         justify-content: center;
       }
+
       .profile-avatar {
         width: 260px;
         height: 260px;
@@ -515,6 +552,7 @@
       .menu-toggle {
         display: block;
       }
+
       .nav-menu {
         position: absolute;
         top: 70px;
@@ -529,24 +567,103 @@
         opacity: 0;
         transition: 0.3s;
         pointer-events: none;
-        border-bottom: 1px solid rgba(57,255,158,0.2);
+        border-bottom: 1px solid rgba(57, 255, 158, 0.2);
       }
+
       .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
         pointer-events: all;
       }
+
       .nav-menu li {
         margin: 1rem 0;
+      }
+
+      /* Mobile overflow fixes */
+      section {
+        padding: 60px 1rem;
+      }
+
+      .name-glow {
+        font-size: 2.2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-sub {
+        font-size: 1.2rem;
+      }
+
+      .profile-avatar {
+        width: 220px;
+        height: 220px;
+      }
+
+      .skill-badge {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+
+      .edu-item,
+      .exp-card {
+        padding: 1.5rem;
+      }
+
+      .edu-item {
+        flex: 1 1 100%;
+      }
+
+      .contact-flex {
+        padding: 1.5rem;
+        border-radius: 30px;
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex: 1 1 100%;
+      }
+
+      .contact-info h3 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .contact-detail {
+        margin: 1.2rem 0;
+      }
+
+      .contact-detail span {
+        word-break: break-word;
+        /* allows the long email/details to break instead of overflow */
+        font-size: 0.95rem;
+      }
+
+      .social-links {
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .download-resume-btn {
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo"><a href="#home">N. SUPRIYA</a></div>
-      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <div class="logo"><a href="#home">Portfolio</a></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -566,7 +683,8 @@
             Full Stack Developer
           </h1>
           <div class="hero-sub">crafting web solutions with clean design</div>
-          <p class="hero-desc">Aspiring Full Stack Developer with experience in React, Node.js, and modern web technologies. Passionate about intuitive UI and scalable back-end.</p>
+          <p class="hero-desc">Aspiring Full Stack Developer with experience in React, Node.js, and modern web
+            technologies. Passionate about intuitive UI and scalable back-end.</p>
           <div class="btn-group">
             <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire me</a>
             <a href="#" id="download-resume-hero" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
@@ -574,13 +692,7 @@
         </div>
         <div class="hero-image">
           <div class="profile-avatar">
-            <!-- REPLACE THE SRC WITH YOUR ACTUAL PHOTO URL -->
-            <img src="/assests/supriya.png" alt="Narla Supriya">
-            <!-- 
-              ⚡ INSTRUCTIONS:
-              1. Replace the src above with your actual photo URL (e.g., from Google Drive, LinkedIn, or any hosted image)
-              2. Make sure the image is square (330x330 or larger) for best results
-            -->
+            <img src="./assests/supriya.png" alt="Narla Supriya">
           </div>
         </div>
       </div>
@@ -617,9 +729,11 @@
         <div class="exp-card">
           <h3>VishMuKa TechWorks</h3>
           <div class="exp-meta"><i class="fas fa-briefcase"></i> Full Stack Developer (Intern → Full‑time)</div>
-          <div class="exp-meta"><i class="fas fa-calendar-alt"></i> Sep 2025 – Jan 2026 (intern) / Jan 2026 – present</div>
+          <div class="exp-meta"><i class="fas fa-calendar-alt"></i> Sep 2025 – Jan 2026 (intern) / Jan 2026 – present
+          </div>
           <ul class="exp-desc">
-            <li><i class="fas fa-angle-right"></i> Full Stack web apps with HTML5, CSS3, JS, React, Node.js, Express</li>
+            <li><i class="fas fa-angle-right"></i> Full Stack web apps with HTML5, CSS3, JS, React, Node.js, Express
+            </li>
             <li><i class="fas fa-angle-right"></i> UI/UX implementation & interactive components</li>
             <li><i class="fas fa-angle-right"></i> RESTful API design & integration</li>
             <li><i class="fas fa-angle-right"></i> SQL/NoSQL databases & version control (Git)</li>
@@ -631,7 +745,8 @@
           <div class="exp-meta"><i class="fas fa-certificate"></i> Web Development Trainee & Certification</div>
           <div class="exp-meta"><i class="fas fa-calendar-alt"></i> Nov 2025 – Dec 2025</div>
           <ul class="exp-desc">
-            <li><i class="fas fa-angle-right"></i> Hands‑on training in front‑end & back‑end (HTML5, CSS3, JS, React, Node, Express)</li>
+            <li><i class="fas fa-angle-right"></i> Hands‑on training in front‑end & back‑end (HTML5, CSS3, JS, React,
+              Node, Express)</li>
             <li><i class="fas fa-angle-right"></i> Built complete web projects under mentorship</li>
           </ul>
         </div>
@@ -667,16 +782,18 @@
           <div class="contact-detail"><i class="fas fa-phone-alt"></i> <span>+91 72860 4864</span></div>
           <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> <span>Hyderabad, India</span></div>
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/narla-supriya-a8b457280" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/supriyan5127" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/narla-supriya-a8b457280" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/supriyan5127" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           </div>
           <div class="download-resume-btn">
-            <a href="#" id="download-resume-footer" class="btn btn-primary"><i class="fas fa-download"></i> Download resume (PDF)</a>
+            <a href="#" id="download-resume-footer" class="btn btn-primary"><i class="fas fa-download"></i> Download
+              resume (PDF)</a>
           </div>
         </div>
         <div class="contact-form">
-          <!-- SEAMLESS FORM – no redirect -->
+          <!-- SEAMLESS FORM – no redirect, uses FormSubmit.co -->
           <form id="contact-form">
             <div class="input-group">
               <input type="text" name="name" placeholder="Your name" required>
@@ -687,7 +804,12 @@
             <div class="input-group">
               <textarea name="message" rows="4" placeholder="Your message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Send message</button>
+            <!-- honeypot and extra config -->
+            <input type="hidden" name="_honey" value="">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+            <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Send
+              message</button>
             <div class="form-status" id="form-status"></div>
           </form>
         </div>
@@ -698,7 +820,7 @@
   <!-- footer intentionally omitted -->
 
   <script>
-    (function() {
+    (function () {
       // mobile toggle
       const toggle = document.getElementById('menu-toggle');
       const menu = document.getElementById('nav-menu');
@@ -706,22 +828,26 @@
         toggle.addEventListener('click', () => {
           menu.classList.toggle('active');
           const icon = toggle.querySelector('i');
-          icon.classList.toggle('fa-bars');
-          icon.classList.toggle('fa-times');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
         });
         document.querySelectorAll('.nav-menu a').forEach(link => {
           link.addEventListener('click', () => {
             menu.classList.remove('active');
             const icon = toggle.querySelector('i');
-            icon.classList.add('fa-bars');
-            icon.classList.remove('fa-times');
+            if (icon) {
+              icon.classList.add('fa-bars');
+              icon.classList.remove('fa-times');
+            }
           });
         });
       }
 
       // smooth scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
           const href = this.getAttribute('href');
           if (href === "#") return;
           const target = document.querySelector(href);
@@ -732,10 +858,28 @@
         });
       });
 
-      // DOWNLOAD RESUME FUNCTION
+      // DOWNLOAD RESUME FUNCTION (demo pdf)
       function downloadResume(event) {
         event.preventDefault();
-        const content = `NARLA SUPRIYA - FULL STACK DEVELOPER\n================================\nEmail: supriyan5127@gmail.com\nPhone: +91 72860 4864\n\nEXPERIENCE:\n- VishMuKa TechWorks: Full Stack Developer (Intern + Full-time)\n- HEXA SOFTWARES: Web Development Trainee\n\nSKILLS: React, Node.js, JavaScript, HTML5, CSS3, MongoDB, Git, etc.\n\nThis is a sample resume. Replace with your actual PDF.`;
+        // generate a simple .txt file disguised as .pdf for demo
+        const content = `NARLA SUPRIYA - FULL STACK DEVELOPER
+================================
+Email: supriyan5127@gmail.com
+Phone: +91 72860 4864
+LinkedIn: linkedin.com/in/narla-supriya-a8b457280
+GitHub: github.com/supriyan5127
+
+EXPERIENCE:
+- VishMuKa TechWorks: Full Stack Developer (Intern + Full-time) Sep 2025 – present
+- HEXA SOFTWARES: Web Development Trainee Nov 2025 – Dec 2025
+
+SKILLS: React, Node.js, JavaScript, HTML5, CSS3, MongoDB, Git, REST APIs, responsive design.
+
+EDUCATION:
+B.Tech CSE, Rajeev Gandhi Memorial College, Nandyal (2021–2025) 78%
+Web Development Certification, HEXA SOFTWARES (2025)
+
+--- This is a sample resume. Replace with your actual PDF file. ---`;
         const blob = new Blob([content], { type: 'application/octet-stream' });
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -752,7 +896,7 @@
       if (heroBtn) heroBtn.addEventListener('click', downloadResume);
       if (footerBtn) footerBtn.addEventListener('click', downloadResume);
 
-      // SEAMLESS FORM SUBMISSION
+      // SEAMLESS FORM SUBMISSION using FormSubmit.co
       const form = document.getElementById('contact-form');
       const statusDiv = document.getElementById('form-status');
 
@@ -761,8 +905,7 @@
           e.preventDefault();
 
           const formData = new FormData(form);
-          formData.append('_honey', '');
-          formData.append('_captcha', 'false');
+          // already appended hidden fields
 
           statusDiv.textContent = 'Sending...';
           statusDiv.style.color = '#39ff9e';
@@ -775,6 +918,7 @@
 
             const result = await response.json();
 
+            // formsubmit returns { success: true } string or boolean
             if (result.success === 'true' || result.success === true) {
               statusDiv.textContent = 'Message sent! Thank you.';
               form.reset();
@@ -809,4 +953,5 @@
     })();
   </script>
 </body>
+
 </html>
